@@ -181,7 +181,7 @@ def create_a_grid(width, height):
     # (x, y)
     # where x is the column and y is the row
     # must be done in one line
-    return [(x, y) for x in range(width) for y in range(height)]
+    return [[(x, y) for x in range(width)] for y in range(height)]
 
 
 # Part 16 (5 points)
@@ -194,7 +194,7 @@ def is_this_tuple_of_three_integers_increasing(t):
 def map_dictionary_to_list_of_tuples(d):
     # DONE: map the dictionary to a list of tuples where each tuple is
     # (key, value)
-    return d.items()
+    return [(key, value) for key, value in d.items()]
 
 
 # Part 18 (5 points)
