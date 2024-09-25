@@ -212,16 +212,16 @@ def implement_binary_search(sorted_list, value):
     # DONE: implement the binary search algorithm to find the index of the
     # value in the sorted list
     # return -1 if the value is not in the list
-    l = 0
-    r = len(sorted_list) - 1
-    while l <= r:
-        mid = (l + r) // 2
+    left = 0
+    right = len(sorted_list) - 1
+    while left <= right:
+        mid = (left + right) // 2
         if sorted_list[mid] == value:
             return mid
         elif sorted_list[mid] < value:
-            l = mid + 1
+            left = mid + 1
         else:
-            r = mid - 1
+            right = mid - 1
     return -1
 
 
